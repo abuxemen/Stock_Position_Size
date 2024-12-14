@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Stock Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Calculator</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="totalAmount">Total Amount (₹):</label>
+                <input type="number" id="totalAmount" placeholder="Enter total amount">
+            </div>
+            <div class="input-group">
+                <label for="entryPrice">Entry Price (₹):</label>
+                <input type="number" id="entryPrice" placeholder="Enter entry price">
+            </div>
+            <div class="input-group">
+                <label for="stopLoss">Stop Loss (₹):</label>
+                <input type="number" id="stopLoss" placeholder="Enter stop loss">
+            </div>
+            <button id="calculate">Calculate</button>
+            <div class="results">
+                <p>Risk Amount: <span id="riskAmount">₹0.00</span></p>
+                <p>Share Quantity: <span id="shareQuantity">0</span></p>
+                <p>Investment Required: <span id="investmentAmount">₹0.00</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
